@@ -204,7 +204,7 @@ defineType("InterfaceExtends", {
   visitor: ["id", "typeParameters"],
   aliases: ["Flow"],
   fields: {
-    id: validateType("Identifier"),
+    id: validateType(["Identifier", "QualifiedTypeIdentifier"]),
     typeParameters: validateOptionalType("TypeParameterInstantiation"),
   },
 });
